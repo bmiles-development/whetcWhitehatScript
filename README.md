@@ -19,9 +19,12 @@ This script is intended to withdraw Whitehat ETC.
         accounts: [privateKey1],
         },
     },
-};```
+};
+```
 4) Add you privateKey to the privateKey1 variable string to the above code
 5) to do a dry run, comment out these two lines of code in the getMyEtc.js script: 
-```var tx = await myContract.withdraw(myAccount, percentPaidToWhiteHats);
-  console.log(tx);```
+```
+  var tx = await myContract.withdraw(myAccount, percentPaidToWhiteHats);
+  console.log(tx);
+```
 6) run ```npx hardhat run getMyEtc.js --network etc```
