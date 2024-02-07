@@ -9,7 +9,7 @@ async function main() {
   //WHITE HAT PERCENTAGE!@!!!!
   const percentPaidToWhiteHats = 0;
 
-  const contractAddress = "0x9f5304da62a5408416ea58a17a92611019bd5ce3";
+  const contractAddress = "0x9f5304da62a5408416ea58a17a92611019bd5ce3"; ///whetcWhitehat Contract Address
   const myContract = await hre.ethers.getContractAt(
     [
       "function withdraw(address _beneficiary, uint _percentageWHG )",
@@ -22,12 +22,12 @@ async function main() {
     contractAddress,
     myAccount
   );
-  const daoBalanceSnapshotContract = await hre.ethers.getContractAt(
+  const daoBalanceSnapshotContract = await hre.ethers.getContractAt( //daoBalanceSnapshot Contract Address
     [
       "function balanceOf(address _dth) constant returns(uint)",
       "function totalSupply() constant returns(uint )",
     ],
-    "0x180826b05452ce96e157f0708c43381fee64a6b8",
+    "0x180826b05452ce96e157f0708c43381fee64a6b8", 
     myAccount
   );
   var whgDonationAddress = await myContract.getWHGDonationAddress();

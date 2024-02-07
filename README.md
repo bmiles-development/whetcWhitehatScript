@@ -8,7 +8,7 @@ This script is intended to withdraw Whitehat ETC.
 ```
     require("@nomicfoundation/hardhat-toolbox");
 
-    privateKey1 = ""; //replace with your account
+    privateKey1 = ""; //replace empty string with your account private key
 
     /** @type import('hardhat/config').HardhatUserConfig */
     module.exports = {
@@ -21,7 +21,7 @@ This script is intended to withdraw Whitehat ETC.
     },
 };
 ```
-4) Add you privateKey to the privateKey1 variable string to the above code
+4) Add your private key to the privateKey1 variable string in the above code
 5) to do a dry run, comment out these two lines of code in the getMyEtc.js script: 
 ```
   var tx = await myContract.withdraw(myAccount, percentPaidToWhiteHats);
