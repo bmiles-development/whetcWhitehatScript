@@ -1,5 +1,8 @@
 # Whitehat ETC Withdraw Contract Interaction Script
 
+The Whitehat Contract this script regards: ```https://github.com/BitySA/whetcwithdraw``` 
+
+
 This script is intended to withdraw Whitehat ETC. 
 
 1) Clone this repo and cd into it
