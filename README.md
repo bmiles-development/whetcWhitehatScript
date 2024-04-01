@@ -24,10 +24,11 @@ This script is intended to withdraw Whitehat ETC.
     },
 };
 ```
-4) Add your private key to the privateKey1 variable string in the above code
-5) to do a dry run, comment out these two lines of code in the getMyEtc.js script: 
+4) copy the getMyEtc.js script file into the ./scripts folder (if the scripts folder is not there, create it first)
+5) Add your private key to the privateKey1 variable string in the above code
+6) to do a dry run, comment out these two lines of code in the getMyEtc.js script: 
 ```
   var tx = await myContract.withdraw(myAccount, percentPaidToWhiteHats);
   console.log(tx);
 ```
-6) run ```npx hardhat run getMyEtc.js --network etc```
+7) run ```npx hardhat run getMyEtc.js --network etc```
